@@ -25,6 +25,18 @@ import {
     threejs,
 } from "../assets";
 
+import web_dev from "../assets/web_dev.png"
+import webApllication from "../assets/webApllication.png"
+import backendDev from "../assets/backendDev.png"
+
+import noticeManagement from '../assets/workedOn/noticeManagement.png'
+import expenseTracker from '../assets/workedOn/expenseTracker.png'
+import fullStack from '../assets/workedOn/fullStack.png'
+
+import Notice_Management from '../assets/projectImages/Notice_Management.png'
+import food_village from '../assets/projectImages/food_village.png'
+import newJrGym from '../assets/projectImages/newJrGym.png'
+import expense_tracker from '../assets/projectImages/expense_tracker.png'
 const navLinks = [
     {
         id: "about",
@@ -43,19 +55,15 @@ const navLinks = [
 const services = [
     {
         title: "Web Developer",
-        icon: web,
+        icon: web_dev,
     },
     {
-        title: "React Native Developer",
-        icon: mobile,
+        title: "Web Application Developer",
+        icon: webApllication,
     },
     {
         title: "Backend Developer",
-        icon: backend,
-    },
-    {
-        title: "Content Creator",
-        icon: creator,
+        icon: backendDev,
     },
 ];
 
@@ -73,16 +81,8 @@ const technologies = [
         icon: javascript,
     },
     {
-        name: "TypeScript",
-        icon: typescript,
-    },
-    {
         name: "React JS",
         icon: reactjs,
-    },
-    {
-        name: "Redux Toolkit",
-        icon: redux,
     },
     {
         name: "Tailwind CSS",
@@ -104,67 +104,64 @@ const technologies = [
         name: "git",
         icon: git,
     },
-    {
-        name: "figma",
-        icon: figma,
-    },
-    {
-        name: "docker",
-        icon: docker,
-    },
 ];
 
 const experiences = [
     {
         title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        company_name: "Notice Management Project",
+        icon: noticeManagement,
         iconBg: "#383E56",
-        date: "March 2020 - April 2021",
+        date: "Nov 2024 - Dec 2024",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Developed the frontend using React.js, ensuring a smooth and responsive UI.",
+            "Collaborated with a backend developer and UI designer to create a fully functional system in just one month.",
+            "Gained hands-on experience in REST API integration, improving data flow and efficiency.",
+            "Focused on designing an engaging and user-friendly interface, enhancing usability.",
+            "Strengthened team collaboration and project management skills while working on a tight deadline."
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
+        title: "Web Application Developer",
+        company_name: "Expense Tracker App",
+        icon: expenseTracker,
         iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
+        date: "Jul 2024 - Aug 2024",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Built a web application with React.js under the guidance of Anurag Sing Sir from Anurag Sing Procodrr YouTube channel.",
+            "Gained strong fundamentals in React and JavaScript, including form validation, conditional rendering, and state management.",
+            "Implemented dynamic functionalities to track and manage expenses efficiently.",
+            "Though the design wasn't perfect, the application successfully performed its intended job.",
+            "Strengthened problem-solving skills by working on real-world React.js challenges."
         ],
     },
     {
         title: "Web Developer",
-        company_name: "Shopify",
+        company_name: "Ecommerce and Gym Service website",
         icon: shopify,
         iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
+        date: "Jul 2024 - Aug 2024",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Developed an eCommerce web application using React.js with raw CSS for styling.",
+            "Created a gym service website using React.js with a focus on animations.",
+            "Learned about layout responsiveness and how to manage complex eCommerce structures.",
+            "Gained practical experience in interactive UI design and smooth motion effects.",
+            "Faced challenges in UI design but improved skills in styling and structuring web pages.",
+            "The ecommerce project is ongoing, and I plan to integrate backend technologies in the future.",
+            "This gym service project was a fun and creative experience, strengthening my frontend development skills."
         ],
     },
     {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
+        title: "Full stack Developement(In Progress)",
+        company_name: "Learning Backend Tecnologies",
+        icon: fullStack,
         iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
+        date: "Jan 2024 - Present",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Currently learning Node.js, Express.js, and MongoDB to build robust backend systems.",
+            "Gaining hands-on experience in database management, CRUD operations, and API development.",
+            "Understanding server-side validation and server creation to improve application performance.",
+            "Working towards building a fully functional full-stack project soon.",
         ],
     },
 ];
@@ -172,7 +169,7 @@ const experiences = [
 const testimonials = [
     {
         testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+            "I thought it was impossible to make a website as beautiful as our product, but Niloy proved me wrong.",
         name: "Sara Lee",
         designation: "CFO",
         company: "Acme Co",
@@ -180,7 +177,7 @@ const testimonials = [
     },
     {
         testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Rick does.",
+            "I've never met a web developer who truly cares about their clients' success like Niloy does.",
         name: "Chris Brown",
         designation: "COO",
         company: "DEF Corp",
@@ -188,7 +185,7 @@ const testimonials = [
     },
     {
         testimonial:
-            "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+            "After Niloy optimized our website, our traffic increased by 50%. We can't thank them enough!",
         name: "Lisa Wang",
         designation: "CTO",
         company: "456 Enterprises",
@@ -198,68 +195,93 @@ const testimonials = [
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "Notice Management",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "The Notice Management System is a React.js-based web app where students can log in to view class notices like assignments, schedules, and test dates, while also submitting feedback. This project strengthened my skills in UI design, REST API integration, and teamwork.",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "mongodb",
+                name: "SQL",
                 color: "green-text-gradient",
             },
             {
                 name: "tailwind",
                 color: "pink-text-gradient",
             },
+            {
+                name: "Django",
+                color: "blue-text-gradient",
+            },
         ],
-        image: carrent,
-        source_code_link: "https://github.com/",
+        image: Notice_Management,
+        source_code_link: "https://github.com/biswass101/Notice_Management_System",
+        live_link: ""
     },
     {
-        name: "Job IT",
+        name: "Tomatto Food Village",
         description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "The Food Ordering eCommerce Website is a web application that allows users to search for food, place orders, and have meals delivered seamlessly. Designed for a smooth user experience, the platform ensures easy navigation, efficient order processing, and a reliable delivery system.",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "restapi",
+                name: "tailwindcss",
                 color: "green-text-gradient",
             },
             {
-                name: "scss",
+                name: "node js",
                 color: "pink-text-gradient",
             },
         ],
-        image: jobit,
-        source_code_link: "https://github.com/",
+        image: food_village,
+        source_code_link: "https://github.com/biswass101/React_Food_ecommerce_project",
+        live_link: "https://tomatto-food-village.vercel.app/"
     },
     {
-        name: "Trip Guide",
+        name: "New JR GYM",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "This Gym Services Website is a web-based platform where customers can explore and purchase gym plans, as well as access information about gym trainers and activities. The website provides a seamless user experience, allowing users to make informed decisions about their fitness journey.",
         tags: [
             {
-                name: "nextjs",
+                name: "react js",
                 color: "blue-text-gradient",
             },
             {
-                name: "supabase",
+                name: "vanila css",
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "animation",
                 color: "pink-text-gradient",
             },
         ],
-        image: tripguide,
-        source_code_link: "https://github.com/",
+        image: newJrGym,
+        source_code_link: "https://github.com/biswass101/REACT_Gym_Website_NJRG",
+        live_link: "https://new-jr-gym.vercel.app/"
+    },
+    {
+        name: "Expense Tracker",
+        description:
+        "Expense tracker app can calculate the purchased products total  price and sort the list according to the price. Item can be edited and deleted",
+        tags: [
+            {
+                name: "react js",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "vanila css",
+                color: "green-text-gradient",
+            },
+        ],
+        image: expense_tracker,
+        source_code_link: "https://github.com/biswass101/REACT_Expense_Tracker",
+        live_link: "https://expense-tracker-theta-ecru.vercel.app/"
     },
 ];
 
-export {navLinks, services, technologies, experiences, testimonials, projects };
+export { navLinks, services, technologies, experiences, testimonials, projects };
