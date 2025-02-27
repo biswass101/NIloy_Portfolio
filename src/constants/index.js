@@ -23,6 +23,8 @@ import {
     jobit,
     tripguide,
     threejs,
+    mahin,
+    blog
 } from "../assets";
 
 import web_dev from "../assets/web_dev.png"
@@ -170,27 +172,12 @@ const testimonials = [
     {
         testimonial:
             "I thought it was impossible to make a website as beautiful as our product, but Niloy proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
-        company: "Acme Co",
-        image: "https://randomuser.me/api/portraits/women/4.jpg",
+        name: "Touhidur Rahman Mahin",
+        designation: "UI/UX Designer",
+        company: "UAPP",
+        image: mahin,
     },
-    {
-        testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Niloy does.",
-        name: "Chris Brown",
-        designation: "COO",
-        company: "DEF Corp",
-        image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-        testimonial:
-            "After Niloy optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
-        designation: "CTO",
-        company: "456 Enterprises",
-        image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
+    
 ];
 
 const projects = [
@@ -281,6 +268,33 @@ const projects = [
         image: expense_tracker,
         source_code_link: "https://github.com/biswass101/REACT_Expense_Tracker",
         live_link: "https://expense-tracker-theta-ecru.vercel.app/"
+    },
+    {
+        name: "Personal Blog",
+        description:
+        "A full stack project on personal blog application. Where a person can create, read, upate and delete blogs",
+        tags: [
+            {
+                name: "react js",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "vanila css",
+                color: "green-text-gradient",
+            },
+            {
+                name: "node js",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Mongo DB",
+                color: "green-text-gradient",
+            },
+
+        ],
+        image: blog,
+        source_code_link: "https://github.com/biswass101/blog_site",
+        live_link: "https://blogshow-mset.onrender.com/"
     },
 ];
 
