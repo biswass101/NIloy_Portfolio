@@ -7,31 +7,45 @@ import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 import { max } from "three/tsl";
+import { compuer_guay } from '../assets'
 
-import links from '../assets/links.png'
-import { link } from "framer-motion/client";
+import links from "../assets/links.png";
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link, live_link }) => {
-  return(
+
+const ProjectCard = ({
+  index,
+  name,
+  description,
+  tags,
+  image,
+  source_code_link,
+  live_link,
+}) => {
+  return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
           max: 45,
           scale: 1,
-          speed: 450
+          speed: 450,
         }}
-        className= "bg-tertiary p-5 rounded-xl sm:w-[360px] w-full"
+        className="bg-tertiary p-5 rounded-xl sm:w-[360px] w-full"
       >
-        <div className="relative w-full h-[230px]">
+        <div onClick={() => window.open(live_link, "_blank")} className="relative w-full h-[230px] cursor-pointer">
           <img
             src={image}
             alt={name}
             className="w-full h-full object-cover rounded-2xl"
           />
-          <div className="absolute inset-0 flex justify-end m-3 
-          card-img_hover gap-1">
+          <div
+            className="absolute inset-0 flex justify-end m-3 
+          card-img_hover gap-1"
+          >
             <button
-              onClick={() => window.open(source_code_link, "_blank")}
+              onClick={(e) => {
+                e.stopPropagation()
+                window.open(source_code_link, "_blank")
+              }}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center
               cursor-pointer"
               title="source code"
@@ -43,7 +57,10 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
               />
             </button>
             <button
-              onClick={() => window.open(live_link, "_blank")}
+              onClick={(e) => {
+                e.stopPropagation()
+                window.open(live_link, "_blank")
+              }}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center
               cursor-pointer"
               title="live link"
@@ -62,15 +79,15 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
         </div>
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag, idx) => (
-            <p key={tag.name}
-              className={`text-[14px] ${tag.color}`}
-            >#{tag.name}</p>
+            <p key={tag.name} className={`text-[14px] ${tag.color}`}>
+              #{tag.name}
+            </p>
           ))}
         </div>
       </Tilt>
     </motion.div>
-  )
-}
+  );
+};
 
 const Works = () => {
   return (
@@ -85,19 +102,18 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          About projects summary. Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Reprehenderit recusandae dolor labore repellat,
-          magni numquam accusamus assumenda rerum deleniti harum eligendi
-          tempore soluta natus alias amet fugit delectus quae eum?
+          As a competitive programmer, I bring a problem-solving mindset to web
+          development, ensuring that my applications are optimized, scalable,
+          and efficient. My projects reflect a deep understanding of state
+          management (Redux Toolkit), RESTful APIs, authentication, and modern
+          web technologies. I am committed to continuous learning and always
+          seek to integrate new technologies and industry best practices into my
+          work.
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
-          <ProjectCard
-            key = {`project-${index}`}
-            index = {index}
-            {...project}
-          />
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
     </>

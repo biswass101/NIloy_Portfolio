@@ -33,6 +33,8 @@ import tripguide from "./tripguide.png";
 import mahin from './mahin.jpg'
 import blog from './blog.png'
 
+import compuer_guay from './compuer_guay.svg'
+
 export {
   logo,
   backend,
@@ -63,5 +65,6 @@ export {
   jobit,
   tripguide,
   mahin,
-  blog
+  blog,
+  compuer_guay
 };

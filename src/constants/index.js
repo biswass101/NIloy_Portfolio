@@ -39,6 +39,12 @@ import Notice_Management from '../assets/projectImages/Notice_Management.png'
 import food_village from '../assets/projectImages/food_village.png'
 import newJrGym from '../assets/projectImages/newJrGym.png'
 import expense_tracker from '../assets/projectImages/expense_tracker.png'
+import ecom from '../assets/ecom.png'
+
+import nextjs from '../assets/Next.js.png'
+import expressJs from '../assets/express.png'
+import typeScript from '../assets/typeScript.png'
+
 const navLinks = [
     {
         id: "about",
@@ -79,28 +85,40 @@ const technologies = [
         icon: css,
     },
     {
+        name: "Tailwind CSS",
+        icon: tailwind,
+    },
+    {
         name: "JavaScript",
         icon: javascript,
+    },
+    {
+        name: "TypeScript",
+        icon: typescript,
+    },
+    {
+        name: "Three JS",
+        icon: threejs,
     },
     {
         name: "React JS",
         icon: reactjs,
     },
     {
-        name: "Tailwind CSS",
-        icon: tailwind,
+        name: "Next JS",
+        icon: nextjs,
     },
     {
         name: "Node JS",
         icon: nodejs,
     },
     {
-        name: "MongoDB",
-        icon: mongodb,
+        name: "Express Js",
+        icon: expressJs,
     },
     {
-        name: "Three JS",
-        icon: threejs,
+        name: "MongoDB",
+        icon: mongodb,
     },
     {
         name: "git",
@@ -181,6 +199,61 @@ const testimonials = [
 ];
 
 const projects = [
+    {
+        name: "Personal Blog",
+        description:
+        "A full stack project on personal blog application. Where a person can create, read, upate and delete blogs",
+        tags: [
+            {
+                name: "react js",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "vanila css",
+                color: "green-text-gradient",
+            },
+            {
+                name: "node js",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Mongo DB",
+                color: "green-text-gradient",
+            },
+
+        ],
+        image: blog,
+        source_code_link: "https://github.com/biswass101/blog_site",
+        live_link: "https://blogshow-mset.onrender.com/"
+    },
+    {
+        name: "Tech E-commerce",
+        description:
+        `A full stack project on Tech E-commerce website. Where a buyer can choose proududs and create carts with products, 
+        buy products, order products`,
+        tags: [
+            {
+                name: "Next js",
+                color: "green-text-gradient",
+            },
+            {
+                name: "taiwind css",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "node js",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Mongo DB",
+                color: "green-text-gradient",
+            },
+
+        ],
+        image: ecom,
+        source_code_link: "https://github.com/biswass101/Ecommerce-return-hex-client",
+        live_link: "https://ecommerce-return-hex-client-r4ypg3tjq.vercel.app/"
+    },
     {
         name: "Notice Management",
         description:
@@ -269,33 +342,7 @@ const projects = [
         source_code_link: "https://github.com/biswass101/REACT_Expense_Tracker",
         live_link: "https://expense-tracker-theta-ecru.vercel.app/"
     },
-    {
-        name: "Personal Blog",
-        description:
-        "A full stack project on personal blog application. Where a person can create, read, upate and delete blogs",
-        tags: [
-            {
-                name: "react js",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "vanila css",
-                color: "green-text-gradient",
-            },
-            {
-                name: "node js",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "Mongo DB",
-                color: "green-text-gradient",
-            },
-
-        ],
-        image: blog,
-        source_code_link: "https://github.com/biswass101/blog_site",
-        live_link: "https://blogshow-mset.onrender.com/"
-    },
+    
 ];
 
 export { navLinks, services, technologies, experiences, testimonials, projects };

@@ -1,8 +1,10 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { styles } from '../style'
+import { compuer_guay } from '../assets'
 import { ComputersCanvas } from './canvas' 
 import  SectionWrapper from '../hoc/SectionWrapper'
+import code_computer from '../assets/code_computer.png'
 const Hero = () => {
   return (
     <section className='relative w-full h-screen mx-auto'>
@@ -21,7 +23,9 @@ const Hero = () => {
         </div>
       </div>
       <ComputersCanvas/>
-
+      {/* <div className='w-full flex justify-end items-center'>
+        <img src={code_computer} alt="" className='lg:w-[50rem] xl:w-[70rem] h-auto'/>
+      </div> */}
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex
