@@ -35,6 +35,8 @@ import blog from './blog.png'
 
 import compuer_guay from './compuer_guay.svg'
 
+import task_manager_proj from './projectImages/task_manager.png'
+
 export {
   logo,
   backend,
@@ -66,5 +68,6 @@ export {
   tripguide,
   mahin,
   blog,
-  compuer_guay
+  compuer_guay,
+  task_manager_proj
 };

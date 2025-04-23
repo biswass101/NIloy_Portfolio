@@ -24,7 +24,8 @@ import {
     tripguide,
     threejs,
     mahin,
-    blog
+    blog,
+    task_manager_proj
 } from "../assets";
 
 import web_dev from "../assets/web_dev.png"
@@ -341,6 +342,24 @@ const projects = [
         image: expense_tracker,
         source_code_link: "https://github.com/biswass101/REACT_Expense_Tracker",
         live_link: "https://expense-tracker-theta-ecru.vercel.app/"
+    },
+    {
+        name: "Task Manager",
+        description:
+        "The Task Manager App is a simple yet powerful web application developed using HTML, CSS, and JavaScript. It allows users to efficiently manage their daily tasks by providing features such as adding, editing, deleting, and clearing tasks. The app includes real-time keyword search, task filtering based on priority (high, medium, low) and status (pending, completed), as well as sorting functionality by due date and priority. Designed with a clean and responsive UI, this tool helps users stay organized and boost productivity in their day-to-day workflow.",
+        tags: [
+            {
+                name: "vanila js",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "vanila css",
+                color: "green-text-gradient",
+            },
+        ],
+        image: task_manager_proj,
+        source_code_link: "https://github.com/biswass101/Task_Manager_with_raw_technologies",
+        live_link: "https://task-manager-rr.netlify.app/"
     },
     
 ];
