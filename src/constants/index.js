@@ -253,7 +253,7 @@ const projects = [
         ],
         image: ecom,
         source_code_link: "https://github.com/biswass101/Ecommerce-return-hex-client",
-        live_link: "https://ecommerce-return-hex-client-r4ypg3tjq.vercel.app/"
+        live_link: "https://ecommerce-return-hex-client-d4ck.vercel.app/"
     },
     {
         name: "Notice Management",
